@@ -9,8 +9,11 @@ def encode(string: str):
 
 
 def decode(string: str):
-    pass
-
+    decoded_pass = ''
+    for digit in str:
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_pass += decoded_digit
+    return decoded_pass
 
 def main():
     password = ""
